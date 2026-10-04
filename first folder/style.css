@@ -1,3 +1,102 @@
-h1{
-    background-color: yellow;
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.container {
+    background-image: url(./nature\ flowers.jpg);
+    height: 70vh;
+    width: 56vw;
+    margin: 100px 300px;
+    border-radius: 13px;
+    border: 3px solid rgb(104, 102, 102);
+    outline: 15px solid rgb(2, 73, 2);
+
+
+}
+
+.main {
+    display: flex;
+    margin: 22px;
+}
+
+.title {
+    height: 470px;
+    width: 400px;
+    color: white;
+    font-family: sans-serif;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 17px;
+    padding-right: 26px;
+    font-family: sans-serif;
+}
+
+.loginpage {
+    height: 450px;
+    width: 400px;
+    color: white;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0px 0px 25px;
+    font-family: sans-serif;
+
+}
+
+input {
+    display: block;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(157, 156, 154);
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 250px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(4, 130, 60);
+    border: none;
+    font-weight: 600;
+}
+
+.foot {
+    font-size: 12px;
+    padding-left: 20px;
+    padding-top: 7px;
+    font-weight: 600;
+}
+
+.a {
+    color: rgb(3, 140, 60);
+    padding-left: 13px;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: rgb(157, 156, 154);
+}
+
+button:hover {
+    background-color: rgb(3, 108, 47);
+    cursor: pointer;
+    transition: 0.3s;
+
 }
