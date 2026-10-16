@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #3D737A;
+
+}
+
+.box-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.main {
+    width: 40vw;
+    height: 60vh;
+    max-width: 500px;
+    max-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.7rem;
+
+
+}
+
+.box {
+    border-radius: 10px;
+    border: none;
+    background-color: #DBDDD8;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.box:active{
+      transform: scale(0.98);
+}
+
+.btn-container {
+    display: flex;
+    gap: 2rem;
+
+}
+
+#reset-btn {
+    padding: 12px 25px;
+    background-color: #A60321;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+     transition:  0.3s ease;
+
+}
+#reset-btn:active{
+    transform: scale(0.98);
+}
+#reset-btn:hover{
+    background-color:#86031b ;
+}
+
+
+#start-btn,#start-btn2 {
+    padding: 12px 25px;
+    background-color: #73E046;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition:  0.3s ease;
+    
+}
+#start-btn:active{
+    transform: scale(0.98);
+}
+#start-btn:hover{
+     background-color: #54b62a;
+}
+#start-btn2:hover{
+     background-color: #54b62a;
+}
+#start-btn2:active{
+    transform: scale(0.96);
+}
+
+
+
+.game {
+    position: absolute;
+}
+
+#turn {
+    position: relative;
+    left: 0;
+    bottom: 14px;
+    font-size: 30px;
+}
+.heading{
+     position: relative;
+    left: 0;
+    bottom: 35px;
+    
+}
+.win{
+   position: absolute;
+   top: 30%;
+   left: 40%;
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+@media (max-width: 1000px) {
+    .main {
+
+        width: 70vmin;
+        height: 80vmin;
+
+    }
+
+    .box-container {
+        width: 100vmin;
+
+    }
+
+    #reset-btn,
+    #start-btn {
+        padding: clamp(10px, 3vw, 12px) clamp(19px, 5vw, 25px);
+        font-size: clamp(14px, 4vw, 18px);
+    }
+}
